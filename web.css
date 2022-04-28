@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(183, 252, 10);
+    height: 100vh;
+    opacity: 0.9;
+    background-image: linear-gradient(to bottom right ,rgb(8, 23, 71) ,rgb(100, 33, 33),rgb(2, 78, 15),rgb(183, 215, 130),rgb(76, 161, 203));  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    margin-top: 80px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-web{
+    color: rgb(8, 1, 1);
+    font-size: 49px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 80px;
+}
+.bio{
+    margin: 40px;
+}
+.main{
+    margin:  auto;
+    margin-top: 100px;
+    width: 80vw;
+    height: 15px;
+    border-radius: 50px;
+    border: 4px solid rgb(26, 18, 31);
+    box-shadow: 0px 0px 30px 0px rgb(137, 212, 15);
+}
+
+.load-web{
+    width: 15%;
+    background-color: rgba(244, 15, 23, 0.664);
+    height: 100%;
+    border-radius: 50px;
+    animation: load-web 5s 1;
+}
+@keyframes load-web {
+    from{
+        width: 0;
+    }
+    to{
+        width: 25%;
+    }
+}
+.completion{
+    align-items: center;
+    font-size: x-large;
+    animation: compi-load 2s 1;
+    margin-left: 23%;
+}
+@keyframes compi-load {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 23%;
+    }
+}
+.myname{
+    font-family: monospace;
+    color: rgb(121, 6, 6);
+    font-size: 38px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.myname::before{
+    content: " ";
+    margin-top: 45px;
+    position: absolute;
+    width: 350px;
+    height: 3px;
+    background-color: rgba(198, 14, 14, 0.514);
+}
+.social-link{
+    display: flex;
+    justify-content:center;
+}
+.social-link img{
+    margin-top: 6px;
+    transition: all 0.2s ;
+    width: 80px;
+}
+.social-link img:hover{
+    width: 90px;
+    opacity: 0.7;
+}
+@media screen and (max-width:544px) {
+    .my-web{
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .bio{
+        margin: 20px auto;
+    }
+    .main{
+        margin-top: 40px;
+        height: 10px;
+    }
+    .completion{
+        font-size:large;
+    }
+    .myname{
+        font-size: 30px;
+    }
+    .social-link img{
+        margin-top: 12px;
+        width: 70px;
+    }
+    .social-link img:hover{
+        width: 80px;
+    }
+}
